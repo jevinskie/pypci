@@ -13,14 +13,11 @@ setup(
         'Development Status :: 4 - Beta',
         'Programming Language :: Python :: 3',
     ],
-    setup_requires=[
-        'cffi>=1.0.0',
-        'pycparserlibc @ git+https://github.com/gwangyi/pycparserlibc',
-        'cffi_ext @ git+https://github.com/gwangyi/cffi_ext',
-    ],
+    setup_requires=['cffi>=1.0.0', 'pycparserlibc', 'cffi_ext'],
     cffi_modules=['build.py:ffi_builder'],
-    install_requires=[
-        'cffi>=1.0.0',
-
-    ],
+    install_requires=['cffi>=1.0.0'],
+    dependency_links=[
+        'git+https://github.com/gwangyi/pycparserlibc#egg=pycparserlibc-0',
+        'git+https://github.com/gwangyi/cffi_ext#egg=cffi_ext-0'
+    ]
 )
