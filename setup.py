@@ -17,7 +17,7 @@ setup(
     cffi_modules=['build.py:ffi_builder'],
     install_requires=['cffi>=1.0.0'],
     dependency_links=[
-        'git+https://github.com/gwangyi/pycparserlibc#egg=pycparserlibc-0',
-        'git+https://github.com/gwangyi/cffi_ext#egg=cffi_ext-0'
+        'git+https://github.com/gwangyi/pycparserlibc#egg=pycparserlibc-0.1',
+        'git+https://github.com/gwangyi/cffi_ext#egg=cffi_ext-0.1'
     ]
 )
